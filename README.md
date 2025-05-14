@@ -11,3 +11,5 @@ Aplicație complet modulară de stație de lucru audio digitală (DAW), construi
 - UI interactiv și minimalist
 - Rulează direct în browser, fără instalare
 
+# Demo online
+https://fxloop.top/
