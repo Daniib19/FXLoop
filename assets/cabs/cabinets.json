@@ -1,0 +1,94 @@
+{
+  "Cabinets": [
+    {
+      "id": 0,
+      "name": "Mesa",
+      "irs": [
+        {
+          "name": "MESA V30",
+          "url": "assets/cabs/v30.wav",
+          "description": "Full-bodied tone with tight low end, aggressive mids, and smooth highs—perfect for modern rock and metal.",
+          "image": "assets/images/mesa_v30.png",
+          "configuration": "4x12",
+          "speakers": "Celestion V30 12-inch",
+          "mic": "AKG C414 XLS",
+          "mic_pos": "Cone",
+          "sound": "Modern, aggressive, articulate"
+        },
+        {
+          "name": "MESA V30 -> SM57",
+          "url": "assets/cabs/MESA_SM57.wav",
+          "description": "Classic SM57 capture with a punchy midrange and crisp high-end response.",
+          "image": "assets/images/mesa_v30.png",
+          "configuration": "4x12",
+          "speakers": "Celestion Vintage 30 12-inch",
+          "mic": "Shure SM57",
+          "mic_pos": "Edge",
+          "sound": "Bright, punchy, focused"
+        },
+        {
+          "name": "MESA V30 -> SM58",
+          "url": "assets/cabs/MESA_SM58.wav",
+          "description": "SM58 adds warmth and midrange character—ideal for thick rhythm tones.",
+          "image": "assets/images/mesa_v30.png",
+          "configuration": "4x12",
+          "speakers": "Celestion Vintage 30 12-inch",
+          "mic": "Shure SM58",
+          "mic_pos": "Off-axis",
+          "sound": "Warm, mid-heavy, rounded"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Hesu",
+      "irs": [
+        {
+          "name": "Hesu 2x12",
+          "url": "assets/cabs/Hesu_2x12.wav",
+          "description": "Tight low end with aggressive mids, ideal for modern metal and high-gain tones.",
+          "image": "assets/images/hesu_2x12.png",
+          "configuration": "2x12",
+          "speakers": "Celestion V30 12-inch",
+          "mic": "Shure SM57",
+          "mic_pos": "Center cone",
+          "sound": "Punchy, tight, aggressive"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Fortin",
+      "irs": [
+        {
+          "name": "Fortin 4x12",
+          "url": "assets/cabs/Fortin_4x12.wav",
+          "description": "Massive low end and razor-sharp articulation—designed for extreme high-gain clarity.",
+          "image": "assets/images/fortin.png",
+          "configuration": "4x12",
+          "speakers": "Eminence DV-77 12-inch",
+          "mic": "Sennheiser MD421",
+          "mic_pos": "Edge",
+          "sound": "Aggressive, tight, high-definition"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Orange",
+      "irs": [
+        {
+          "name": "Orange 4x12",
+          "url": "assets/cabs/Crush35RT_VOTW_A.wav",
+          "description": "Classic British tone with warm mids and a vintage edge, perfect for rock and stoner riffs.",
+          "image": "assets/images/orange.png",
+          "configuration": "4x12",
+          "speakers": "Voice of the World 12-inch",
+          "mic": "Shure SM57",
+          "mic_pos": "Off-center",
+          "sound": "Warm, vintage, mid-focused"
+        }
+      ]
+    }
+  ]
+}

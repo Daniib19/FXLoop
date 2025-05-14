@@ -1,0 +1,43 @@
+{
+  "presetName": "Heavy Metal",
+  "category": "Metal",
+  "isUserMade": false,
+  "fxNodes": 2,
+  "nodes": {
+      "node1": {
+          "type": "amp",
+          "name": "Marshall JCM800",
+          "values": [
+              [
+                  1,
+                  1,
+                  3,
+                  7,
+                  8,
+                  3,
+                  0,
+                  1,
+                  9,
+                  8,
+                  7,
+                  1,
+                  8,
+                  5,
+                  2
+              ]
+          ]
+      },
+      "node2": {
+          "type": "cab",
+          "name": "Cabinet",
+          "values": [
+              [
+                  1,
+                  "MESA V30 -> SM57",
+                  0.2,
+                  1
+              ]
+          ]
+      }
+  }
+}

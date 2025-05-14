@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat gitar - amp</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.js" integrity="sha512-OztPUuNsmM+BUn6NOM5EVZED6aFf/0P4V+cVwcf5iR5T58hGyIJ8XtWFd5ctuOpGytfCsxy4/9JqxeTLliXrBA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/7.8.17/plugins/regions.min.js" integrity="sha512-gB04IXOk4dN612MDIIYP9xnJXhajZdES4d4MyfMxXPwVKwaQV/5tQzWQUja1mRrsCCmgGCEdz19sXYBNX4tKzA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/7.8.17/wavesurfer.min.js" integrity="sha512-8dGH/r2QSkl4ReA4swvHhG19oRtx7rBSJ8nqHrc+YmeIk0UeCDwo9wd4lAQgKns+v8d3AfrS6FRRhyIcoAAv6w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.4/wavesurfer.min.js" integrity="sha512-/OXj4FUgEscXKD5YhrFOjx2NWZ7gjGatMETWNd0z6CNyF/pPDUto2Fu3qE2qqh1kVn5or3jGogF01s1ioSts9A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.4/plugin/wavesurfer.regions.min.js" integrity="sha512-1+F1qbk9xICW7zzX/phgDbh8pR+4yZwk4+/q0wXUR/c84uor9Ga0KnucbeRvgfvNAXtv8otjyimWpVSoCy8L+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.css" integrity="sha512-NGDSD+b9ygs7E3Bu7orcEL8DojlfYLZGfNkZpCsFlMs6vEM3Q36iXc1oNOLya5bLWrqD+hHoV1Ii2OMqkYZznw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="main-page">
+  <div class="main-container">
+    <div class="loop-manager">
+      <a class="loop-btn add-track" id="addTrack">Add Track</a>
+    </div>
+    <div class="preset-wrapper">
+      <div>
+        <input id="project-name" class="project-name" value="Project Name" autocorrect="off" autocapitalize="off" spellcheck="false" autocomplete="off"></span>
+      </div>
+    </div>
+    <div class="project-controls">
+      <a class="loop-btn play-btn" id="playAll"><i class="fa-solid fa-play"></i></a>
+      <a class="loop-btn load-on"  id="managerPreset"><i class="fa-solid fa-folder"></i></a>
+      <a class="loop-btn loop-on" id="saveManager" data-id="-1" data-userMade="1"><i class="fa-solid fa-floppy-disk"></i></a>
+      <a class="loop-btn mute-on" id="deletePreset" style="display: none"><i class="fa-solid fa-trash"></i></a>
+      <a class="loop-btn"><i class="fa-solid fa-gear"></i></a>
+    </div>
+  </div>
+
+  <div class="nav-container">
+    <div class="user-controls">
+      <div class="loops-container" id="managers">
+        <!-- LOOP 1 -->
+        
+        <!-- <div class="fxloop-container">
+          <div class="loop-container" id="Loop-0">
+          <div class="loop-header">
+            <span>Rythm Guitar</span>
+          </div>
+          <div class="loop-controls">
+            <div class="sliders-container">
+              <div class="slider-item">
+                <label>Input</label>
+                <input type="text" id="FX0-input" class="loop-slider" data-min="0.01" data-max="5" value="1">
+              </div>
+              <div class="slider-item">
+                <label>Pan</label>
+                <input type="text" id="FX0-pan" class="loop-slider">
+              </div>
+            </div>
+            <div class="loop-buttons">
+              <div class="loop-section">
+                <label>Controls</label>
+                <a class="loop-btn" id="play" data-id="0" >Play</a>
+                <a class="loop-btn" id="mute" data-id="0" >Mute</a>
+              </div>
+              <div class="loop-section" style="align-self: flex-end;">
+                <a class="loop-btn" id="rec" data-id="0">Rec</a>
+                <a class="loop-btn" id="pause" data-id="0">Pause</a>
+              </div>
+              <div class="loop-section" style="align-self: flex-end;">
+                <label>Audio</label>
+                <a class="loop-btn" id="loop" data-id="0">Loop</a>
+                <a class="loop-btn" id="loadAudio" data-id="0">Load</a>
+              </div>
+              <div class="loop-section">
+                <label>Presets</label>
+                <a class="loop-btn">Load</a>
+                <a class="loop-btn">Save</a>
+              </div>
+              <div class="loop-meters" >
+                <div class="input-meter">
+                  <div class="meter-fill" id="loop-0-meter"></div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="flow-list" id="Loop-0-list">
+            <div class="signal-flow" id="FX0"><div class="node-wrapper" id="line-0-0"><a class="node" id="in-node">IN</a>
+              <div class="line-container">
+                <div class="line"></div>
+                <div class="line-hover-menu">
+                  <i class="fa-solid fa-plus to-add" id="add-0-0"></i>
+                </div>
+              </div>
+            </div><div class="node-wrapper"><a class="node" id="out-node">OUT</a></div></div>
+          </div>
+        </div> -->
+  
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<div class="fx-controls">
+  <div class="fx-list" id="fx-list"></div>
+</div>
+
+<div class="fx-modal-overlay" id="loopChangeModal" data-id="0">
+  <div class="fx-card">
+    <div class="fx-header add-header audio flex-row">
+      <input id="loopname" class="project-name" value="New Project" autocorrect="off" autocapitalize="off" spellcheck="false" autocomplete="off">
+      <i class="fa-solid fa-pencil"></i>
+    </div>
+    <div class="fx-content" id="fx-list">
+      <div class="fx-list2 loop-options">
+        <div class="fx-item color-item">
+          Change Color
+          <input type="color" id="colorPicker" value="#ff0000" style="float: right">
+        </div>
+        <div class="fx-item" id="displaySpectrum">
+          Show Spectrum
+        </div>
+        <div class="fx-item" id="displayAudioChunk">
+          Edit Audio Buffer
+        </div>
+        <div class="fx-item" id="deleteLoop">
+          Delete
+          <i class="delete-on fa-solid fa-x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fx-modal-overlay" id="presetLoader" data-id="0">
+  <div class="fx-card" style="min-width: 30vw; min-height: 300px;">
+    <div class="fx-header add-header">Loop Presets</div>
+    <div class="fx-content" style="width: 100%; gap: 0px; padding: 0px; flex: 1;" id="presetsContainer">
+      <div class="fx-list2 navbar" style="flex-grow: 1; width: 30%;">
+        <div class="fx-item audio-preset-categ" data-categ="user">User</div>
+      </div>
+      <div class="fx-list2 fx-details" style="flex-grow: 3;" id="audio-user-presets"></div>
+      <!-- <div class="fx-list2 fx-details" style="flex-grow: 3;" id="audioSystemPresets"></div> -->
+      <!-- <div class="fx-list2 fx-details" style="flex-grow: 3;" id="audioUserPresets" style="display: none!important;"></div> -->
+    </div>
+  </div>
+</div>
+<div class="fx-modal-overlay" id="managerPresetLoader">
+  <div class="fx-card" style="min-width: 30vw; min-height: 300px;">
+    <div class="fx-header add-header">Projects</div>
+    <div class="fx-content" style="width: 100%; gap: 0px; padding: 0px; flex: 1;">
+      <div class="fx-list2 navbar" style="flex-grow: 1; width: 30%;">
+        <div class="fx-item preset-categ" data-categ="sys">System</div>
+        <div class="fx-item preset-categ" data-categ="user">User</div>
+      </div>
+      <div class="fx-list2 fx-details" style="flex-grow: 3;" id="managerSystemPresets"></div>
+      <div class="fx-list2 fx-details" style="flex-grow: 3;" id="managerUserPresets" style="display: none!important"></div>
+    </div>
+  </div>
+</div>
+<div class="fx-modal-overlay" id="audioModal" data-id="0">
+  <div class="fx-card" style="min-width: 30vw; min-height: 300px;">
+    <div class="fx-header add-header audio">Add Audio</div>
+    <div class="fx-content" style="width: 100%; gap: 0px; padding: 0px; flex: 1;">
+      <div class="fx-list2" id="audio_list">
+        <!-- <div class="fx-item add-audio" data-id="0">Guitar Shred</div>
+        <div class="fx-item add-audio" data-id="1">Enter Sandman</div>
+        <div class="fx-item add-audio" data-id="2">Smells like Teen Spirit</div>
+        <div class="fx-item add-audio" data-id="3">Back in Black</div>
+        <div class="fx-item add-audio" data-id="4">Clean Arpeggios</div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fx-modal-overlay" id="patchFX" data-id="0">
+  <div class="fx-card" style="min-width: 30vw;">
+    <div class="fx-header add-header audio">Configure</div>
+    <div class="fx-content" style="width: 100%; gap: 0px; padding: 0px; flex: 1;">
+      <div class="fx-list2 navbar" style="flex-grow: 1; width: 30%;">
+        <div class="fx-item patch-button" data-button="A">A</div>
+        <div class="fx-item patch-button" data-button="B">B</div>
+        <div class="fx-item patch-button" data-button="C">C</div>
+        <div class="fx-item patch-button" data-button="D">D</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fx-modal-overlay" id="IRModal" data-loop="0" data-index="0">
+  <div class="fx-card" style="width: 50vw;">
+    <div class="fx-header add-header audio">Load IR</div>
+    <div class="fx-content" style="width: 100%; gap: 0px; padding: 0px; flex: 1;">
+      <div class="fx-list2 navbar" style="flex-grow: 1; width: 30%;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fx-card spectrum-card hide" style="width: 940px;">
+  <div class="fx-header add-header spectrum-header">
+    <div class="spectrum-title">
+      <span>Spectrum</span>
+      <a class="spectrum close-btn"><i class="fa-solid fa-xmark"></i></a>
+    </div>
+  </div>
+  <div class="spectrum-controls">
+    <div class="spectrum-control-wrapper">
+      <div class="spec-header">Amplitude</div>
+      <div class="spectrum-input">
+        <div class="spec-flex">
+          <label class="spec-label">min</label>
+          <input type="text" id="spec_minDb" class="spec-slider" data-min="-148" data-max="48" data-step="6" value="-40">
+          <label class="spec-label min-spec">-40</label>
+        </div>
+        <div class="spec-flex">
+          <label class="spec-label">max</label>
+          <input type="text" id="spec_maxDb" class="spec-slider" data-min="-148" data-max="48" data-step="6" value="12">
+          <label class="spec-label max-spec">+20</label>
+        </div>
+      </div>
+    </div>
+    <div class="spectrum-control-wrapper">
+      <div class="spec-header">Frequency</div>
+      <div class="spectrum-input">
+        <div class="spec-flex row">
+          <a class="spec-btn" data-spec="low">Low</a>
+          <a class="spec-btn" data-spec="mid">Mid</a>
+          <a class="spec-btn" data-spec="hi">High</a>
+          <a class="spec-btn" data-spec="rst">All</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fx-content spectrum-content">
+    <canvas id="spectrum-canvas" width="900px" height="300"></canvas>
+  </div>
+</div>
+
+<div class="fx-card audio-chunk-card hide" style="width: 900px;">
+  <div class="fx-header add-header spectrum-header">
+    <div class="spectrum-title">
+      <span>Audio Chunk</span>
+      <a class="audio-chunk close-btn"><i class="fa-solid fa-xmark"></i></a>
+    </div>
+    
+  </div>
+  <div class="spectrum-controls">
+    <div class="spectrum-control-wrapper">
+      <div class="spec-header times-span">Duration : <span class="duration-span">0s</span></div>
+    </div>
+    <div class="spectrum-control-wrapper">
+      <div class="spectrum-input">
+        <div class="spec-flex row" style="align-items: flex-start">
+          <div class="spec-header">Trimmer</div>
+          <a class="trim-btn" data-cut="0">ON</a>
+          <a class="trim-btn hide" data-cut="1">Cut</a>
+        </div>
+      </div>
+    </div>
+    <div class="times-span">Hover : <span id="hover-time">0.00s</span></div>
+    <div class="times-span trim-vals">Trim : <span id="trim-time" data-start="-1" data-end="-1">(0.0, 0.0)</span></div>
+  </div>
+  <div class="fx-content spectrum-content">
+     <div id="audio-canvas"></div>
+  </div>
+</div>
+
+<script src="src/templates.js"></script>
+<script src="src/FX.js"></script> 
+<script src="src/FXLoop.js"></script> 
+<script src="src/FXManager.js"></script>
+<script src="src/EQ2.js"></script>
+<script src="src/Preamp.js"></script>
+<script src="src/Flanger.js"></script>
+<script src="src/PreampClean.js"></script>
+<script src="src/Convolver.js"></script>
+<script src="src/Marshall.js"></script>
+<script src="src/PatchFX.js"></script>
+<script src="src/EQ_MXR.js"></script>
+<script src="src/Overdrive.js"></script>
+<script src="src/Volume.js"></script>
+<script src="src/NoiseGate.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

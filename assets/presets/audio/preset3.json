@@ -1,0 +1,54 @@
+{
+    "presetName": "Flanger thing",
+    "category": "Clean",
+    "isUserMade": false,
+    "fxNodes": 3,
+    "nodes": {
+        "node1": {
+            "type": "amp",
+            "name": "Marshall JCM800",
+            "values": [
+                [
+                    1,
+                    1,
+                    "3",
+                    7,
+                    9,
+                    3,
+                    -24.950000762939453,
+                    1,
+                    "9",
+                    "8",
+                    6,
+                    -3,
+                    15,
+                    5,
+                    2.5999999046325684
+                ]
+            ]
+        },
+        "node2": {
+            "type": "cab",
+            "name": "Cabinet",
+            "values": [
+                [
+                    1,
+                    "MESA V30",
+                    0.2,
+                    1
+                ]
+            ]
+        },
+        "node3": {
+            "type": "flg",
+            "name": "Flanger",
+            "values": [
+                1,
+                0.9,
+                0.003000000026077032,
+                0.5,
+                1
+            ]
+        }
+    }
+}

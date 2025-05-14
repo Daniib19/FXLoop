@@ -1,0 +1,123 @@
+{
+  "FXList": [
+    {
+      "id": 0,
+      "name": "Amplifier",
+      "type": "amp",
+      "icon": "fa-bolt add-amp",
+      "fx": [
+        {
+          "name": "Amplificator",
+          "nodeType": "Marshall",
+          "subType": "",
+          "description": "A classic amp sound for crunchy tones.",
+          "id": "0"
+        },
+        {
+          "name": "Test",
+          "nodeType": "Marshall",
+          "subType": "",
+          "description": "Test",
+          "id": "1"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Cabinet",
+      "type": "cab",
+      "icon": "fa-cube add-cab",
+      "fx": [
+        {
+          "name": "Cabinet",
+          "nodeType": "Convolver",
+          "subType": "",
+          "description": "This is basically an IR loader that can be changed on the fly.",
+          "id": "0"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Modulation",
+      "type": "mod",
+      "icon": "fa-wave-square add-mod",
+      "fx": [
+        {
+          "name": "Flanger",
+          "nodeType": "Flanger",
+          "subType": "",
+          "description": "Makes it sound like a fighter jet.",
+          "id": "0"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Equalizer",
+      "type": "eq",
+      "icon": "fa-sliders add-eq",
+      "fx": [
+        {
+          "name": "Equalizer",
+          "nodeType": "EQ",
+          "subType": "",
+          "description": "Some filters in series",
+          "id": "0"
+        },
+        {
+          "name": "10 Band EQ",
+          "nodeType": "EQ_MXR",
+          "subType": "eq_mxr",
+          "description": "MXR 10 Band EQ",
+          "id": "1"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Distortion",
+      "type": "od",
+      "icon": "fa-solid fa-tachometer-alt add-disto",
+      "fx": [
+        {
+          "name": "Overdrive",
+          "nodeType": "Green_OD",
+          "subType": "",
+          "description": "Based on a TubeScreamer Overdrive Pedal",
+          "id": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Volume & Expression",
+      "type": "vol",
+      "icon": "fa-solid fa-volume-high add-vol",
+      "fx": [
+        {
+          "name": "Volume Boost",
+          "nodeType": "VolumeBoost",
+          "subType": "",
+          "description": "Pedal to boost the volume",
+          "id": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Switchers & Routers",
+      "type": "swc",
+      "icon": "fa-solid fa-shuffle add-swc",
+      "fx": [
+        {
+          "name": "Patch FX",
+          "nodeType": "FXPatch",
+          "subType": "",
+          "description": "This pedal can allow you to switch between presets and toggle between pedals",
+          "id": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "managerName": "New Project",
+  "numberOfTracks": 2,
+  "tracks": {
+      "track0": {
+          "index": 0,
+          "name": "fgfg",
+          "color": "#e68aff",
+          "preset": {
+              "fxNodes": 2,
+              "nodes": {
+                  "node1": {
+                      "type": "amp",
+                      "name": "Marshall JCM800",
+                      "values": [
+                          [
+                              1,
+                              1,
+                              3,
+                              7,
+                              8,
+                              3,
+                              0,
+                              1,
+                              9,
+                              8,
+                              7,
+                              1,
+                              8,
+                              5,
+                              2
+                          ]
+                      ]
+                  },
+                  "node2": {
+                      "type": "cab",
+                      "name": "Cabinet",
+                      "values": [
+                          [
+                              1,
+                              "MESA V30",
+                              0.2,
+                              1
+                          ]
+                      ]
+                  }
+              }
+          },
+          "stoppedNaturally": false,
+          "stoppedFromPreset": false,
+          "isPlaying": false,
+          "isRecording": false,
+          "loopAudio": false,
+          "muted": false,
+          "solo": false,
+          "source": null,
+          "recordSource": null,
+          "instrument": null,
+          "buffer": null,
+          "playbackOffset": 0,
+          "startTime": 0,
+          "pan": 0,
+          "volume": 1
+      },
+      "track1": {
+          "index": 1,
+          "name": "Track 2",
+          "color": "#b730e0",
+          "preset": {
+              "fxNodes": 0,
+              "nodes": {}
+          },
+          "stoppedNaturally": false,
+          "stoppedFromPreset": false,
+          "isPlaying": false,
+          "isRecording": false,
+          "loopAudio": false,
+          "muted": false,
+          "solo": false,
+          "source": null,
+          "recordSource": null,
+          "instrument": null,
+          "buffer": null,
+          "playbackOffset": 0,
+          "startTime": 0,
+          "pan": 0,
+          "volume": 1
+      }
+  }
+}

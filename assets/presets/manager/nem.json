@@ -1,0 +1,371 @@
+{
+    "managerName": "Nothing Else Matters",
+    "numberOfTracks": 6,
+    "tracks": {
+        "track0": {
+            "index": 0,
+            "name": "Main Clean",
+            "color": "#6bf7bc",
+            "preset": {
+                "fxNodes": 2,
+                "nodes": {
+                    "node1": {
+                        "type": "amp",
+                        "name": "Marshall JCM800",
+                        "values": [
+                            [
+                                1,
+                                0,
+                                "2.82",
+                                -2.5999999046325684,
+                                -9.399999618530273,
+                                11.807999610900879,
+                                -14.399999618530273,
+                                1.375,
+                                "9",
+                                "8",
+                                7,
+                                1,
+                                8,
+                                5,
+                                2
+                            ]
+                        ]
+                    },
+                    "node2": {
+                        "type": "cab",
+                        "name": "Cabinet",
+                        "values": [
+                            [
+                                1,
+                                "Fortin 4x12",
+                                0.2,
+                                1.225000023841858
+                            ]
+                        ]
+                    }
+                }
+            },
+            "stoppedNaturally": false,
+            "stoppedFromPreset": false,
+            "isPlaying": false,
+            "isRecording": false,
+            "loopAudio": false,
+            "muted": false,
+            "solo": false,
+            "source": null,
+            "recordSource": null,
+            "recordDestination": null,
+            "recorder": null,
+            "recordedChunks": null,
+            "audioURL": null,
+            "recordedBlob": null,
+            "instrument": null,
+            "buffer": "NEM_Rythm1",
+            "playbackOffset": 0,
+            "startTime": 71.192,
+            "pan": 0,
+            "volume": 1.600000023841858,
+            "gate": 0.000001
+        },
+        "track1": {
+            "index": 1,
+            "name": "Clean Lead 1",
+            "color": "#bfa6e7",
+            "preset": {
+                "fxNodes": 4,
+                "nodes": {
+                    "node1": {
+                        "type": "amp",
+                        "name": "Marshall JCM800",
+                        "values": [
+                            [
+                                1,
+                                0,
+                                "1.92",
+                                -3.799999952316284,
+                                -7,
+                                5.927999973297119,
+                                -14.399999618530273,
+                                1.375,
+                                "9",
+                                "8",
+                                7,
+                                1,
+                                8,
+                                5,
+                                2
+                            ]
+                        ]
+                    },
+                    "node2": {
+                        "type": "cab",
+                        "name": "Cabinet",
+                        "values": [
+                            [
+                                1,
+                                "MESA V30",
+                                0.2,
+                                1.4874999523162842
+                            ]
+                        ]
+                    },
+                    "node3": {
+                        "name": "Volume Boost",
+                        "type": "vol",
+                        "subtype": "",
+                        "values": [
+                            true,
+                            1
+                        ]
+                    },
+                    "node4": {
+                        "name": "10 Band EQ",
+                        "type": "eq",
+                        "subtype": "eq_mxr",
+                        "values": [
+                            1,
+                            -7,
+                            0,
+                            2,
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            2,
+                            0
+                        ]
+                    }
+                }
+            },
+            "stoppedNaturally": false,
+            "stoppedFromPreset": false,
+            "isPlaying": false,
+            "isRecording": false,
+            "loopAudio": false,
+            "muted": false,
+            "solo": false,
+            "source": null,
+            "recordSource": null,
+            "recordDestination": null,
+            "recorder": null,
+            "recordedChunks": null,
+            "audioURL": null,
+            "recordedBlob": null,
+            "instrument": null,
+            "buffer": "NEM_Lead1",
+            "playbackOffset": 0,
+            "startTime": 71.192,
+            "pan": -0.4950000047683716,
+            "volume": 2.5,
+            "gate": 0.000001
+        },
+        "track2": {
+            "index": 2,
+            "name": "Clean Rythm 2",
+            "color": "#fcbca1",
+            "preset": {
+                "fxNodes": 2,
+                "nodes": {
+                    "node1": {
+                        "type": "amp",
+                        "name": "Marshall JCM800",
+                        "values": [
+                            [
+                                1,
+                                0,
+                                2.52,
+                                -2.5999999046325684,
+                                -6.400000095367432,
+                                7.188000202178955,
+                                -12.600000381469727,
+                                1.375,
+                                "9",
+                                "8",
+                                7,
+                                1,
+                                8,
+                                5,
+                                2
+                            ]
+                        ]
+                    },
+                    "node2": {
+                        "type": "cab",
+                        "name": "Cabinet",
+                        "values": [
+                            [
+                                1,
+                                "MESA V30",
+                                0.2,
+                                1.225000023841858
+                            ]
+                        ]
+                    }
+                }
+            },
+            "stoppedNaturally": false,
+            "stoppedFromPreset": false,
+            "isPlaying": false,
+            "isRecording": false,
+            "loopAudio": false,
+            "muted": false,
+            "solo": false,
+            "source": null,
+            "recordSource": null,
+            "recordDestination": null,
+            "recorder": null,
+            "recordedChunks": null,
+            "audioURL": null,
+            "recordedBlob": null,
+            "instrument": null,
+            "buffer": "NEM_Lead2",
+            "playbackOffset": 0,
+            "startTime": 71.192,
+            "pan": 0.4950000047683716,
+            "volume": 1.8250000476837158,
+            "gate": 0.000001
+        },
+        "track3": {
+            "index": 3,
+            "name": "Clean Lead 2",
+            "color": "#8259c0",
+            "preset": {
+                "fxNodes": 3,
+                "nodes": {
+                    "node1": {
+                        "type": "amp",
+                        "name": "Marshall JCM800",
+                        "values": [
+                            [
+                                1,
+                                0,
+                                2.9699999999999998,
+                                -2.5999999046325684,
+                                -9.399999618530273,
+                                11.807999610900879,
+                                -14.399999618530273,
+                                1.375,
+                                "9",
+                                "8",
+                                7,
+                                1,
+                                8,
+                                5,
+                                2
+                            ]
+                        ]
+                    },
+                    "node2": {
+                        "type": "cab",
+                        "name": "Cabinet",
+                        "values": [
+                            [
+                                1,
+                                "MESA V30 -> SM58",
+                                0.2,
+                                1.225000023841858
+                            ]
+                        ]
+                    },
+                    "node3": {
+                        "name": "Equalizer",
+                        "type": "eq",
+                        "subtype": "",
+                        "values": [
+                            1,
+                            -7,
+                            3,
+                            0,
+                            0,
+                            0,
+                            -6
+                        ]
+                    }
+                }
+            },
+            "stoppedNaturally": false,
+            "stoppedFromPreset": false,
+            "isPlaying": false,
+            "isRecording": false,
+            "loopAudio": false,
+            "muted": false,
+            "solo": false,
+            "source": null,
+            "recordSource": null,
+            "recordDestination": null,
+            "recorder": null,
+            "recordedChunks": null,
+            "audioURL": null,
+            "recordedBlob": null,
+            "instrument": null,
+            "buffer": "NEM_Rythm2",
+            "playbackOffset": 0,
+            "startTime": 71.192,
+            "pan": 0,
+            "volume": 1.75,
+            "gate": 0.000001
+        },
+        "track4": {
+            "index": 4,
+            "name": "Drums",
+            "color": "#f2fe43",
+            "preset": {
+                "fxNodes": 0,
+                "nodes": {}
+            },
+            "stoppedNaturally": false,
+            "stoppedFromPreset": false,
+            "isPlaying": false,
+            "isRecording": false,
+            "loopAudio": false,
+            "muted": false,
+            "solo": false,
+            "source": null,
+            "recordSource": null,
+            "recordDestination": null,
+            "recorder": null,
+            "recordedChunks": null,
+            "audioURL": null,
+            "recordedBlob": null,
+            "instrument": null,
+            "buffer": "NEM_Drums",
+            "playbackOffset": 0,
+            "startTime": 71.192,
+            "pan": 0,
+            "volume": 2.6500000953674316,
+            "gate": 0.000001
+        },
+        "track5": {
+            "index": 5,
+            "name": "Bass",
+            "color": "#382791",
+            "preset": {
+                "fxNodes": 0,
+                "nodes": {}
+            },
+            "stoppedNaturally": false,
+            "stoppedFromPreset": false,
+            "isPlaying": false,
+            "isRecording": false,
+            "loopAudio": false,
+            "muted": false,
+            "solo": false,
+            "source": null,
+            "recordSource": null,
+            "recordDestination": null,
+            "recorder": null,
+            "recordedChunks": null,
+            "audioURL": null,
+            "recordedBlob": null,
+            "instrument": null,
+            "buffer": "NEM_Bass",
+            "playbackOffset": 0,
+            "startTime": 71.192,
+            "pan": 0,
+            "volume": 2.125,
+            "gate": 0.000001
+        }
+    }
+}
